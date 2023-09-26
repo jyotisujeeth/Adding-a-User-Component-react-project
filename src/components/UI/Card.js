@@ -1,13 +1,11 @@
 import React from "react";
 
 
-import calsses from 'Card.module.css';
+import calsses from '.\Card.module.css';
 const Card = (props) => {
 return
-(
-     <div className ={calsses.card} ${props.classesname}> (props.children)
 
-</div>;
-)};
+     <div className ={`${classes.card} ${props.className}`}> (props.children)</div>;
+};
 
 export default Card;
