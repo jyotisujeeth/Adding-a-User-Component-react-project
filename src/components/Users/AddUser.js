@@ -13,7 +13,7 @@ const AddUser = (props) => {
     if(enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       return;
     }
-    if( +enteredAge < 10) {
+    if( +enteredAge < 10) {//+force convesatuion of string to number
       return;
     }
     console.log(enteredAge , enteredUsername);
