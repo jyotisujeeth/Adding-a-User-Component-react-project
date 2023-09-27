@@ -16,7 +16,8 @@ const AddUser = (props) => {
     if( +enteredAge < 10) {//+force convesatuion of string to number
       return;
     }
-    console.log(enteredAge , enteredUsername);
+    // console.log(enteredAge , enteredUsername);
+    props.onAddUser(enteredAge, enteredUsername);
     setEnteredUsername('');
     setEnteredAge('');
     };

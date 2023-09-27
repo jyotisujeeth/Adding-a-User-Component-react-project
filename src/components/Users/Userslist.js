@@ -1,6 +1,6 @@
 import React from "react";
 
-import card from "../UI.Card";
+import card from '../UI/Card';
 const usersList = props => {
 return (
   <Card  className={ classes.users}>
