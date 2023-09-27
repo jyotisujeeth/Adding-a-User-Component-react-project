@@ -33,27 +33,30 @@ const ageChangeHandler = (event) => {
 
 
     return (
-      <ErrorModal title="An error occured!" message="something went wrong! ">
-        <Card className={classes.input}>
-          <form onSubmit={addUserHandler}>
-            <label htmlFor="username"> UserName</label>
-            <input
-              id="username"
-              type=" text"
-              value={enteredUsername}
-              onChange={usernameChangeHandler}
-            ></input>
-            <label htmlFor="age">Age(year)</label>
-            <input
-              id="age"
-              type="number"
-              value={enteredAge}
-              onChange={ageChangeHandler}
-            ></input>
-            <Button type="submit">Add User</Button>
-          </form>
-        </Card>
-      </ErrorModal>
+      <div>
+        <div className={classes.backdrop}/>
+        <ErrorModal title="An error occured!" message="something went wrong! ">
+          <Card className={classes.input}>
+            <form onSubmit={addUserHandler}>
+              <label htmlFor="username"> UserName</label>
+              <input
+                id="username"
+                type=" text"
+                value={enteredUsername}
+                onChange={usernameChangeHandler}
+              ></input>
+              <label htmlFor="age">Age(year)</label>
+              <input
+                id="age"
+                type="number"
+                value={enteredAge}
+                onChange={ageChangeHandler}
+              ></input>
+              <Button type="submit">Add User</Button>
+            </form>
+          </Card>
+        </ErrorModal>
+      </div>
     );
 };
 
